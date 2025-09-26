@@ -1,0 +1,84 @@
+body{
+    background-color: antiquewhite;
+}
+.main {
+    min-height: 100vh; /* instead of fixed height */
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px; /* padding for small screens */
+}
+
+.sub-main {
+    width: 100%;
+    max-width: 900px; /* fluid container */
+    min-height: 300px; /* flexible height */
+    background-color: whitesmoke;
+    border-radius: 8px;
+    overflow: hidden; /* prevent content overflow */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.title {
+    width: 100%;
+    min-height: 60px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+}
+
+.count {
+    width: 100%;
+    min-height: 60px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+span {
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+}
+
+.word1 {
+    margin-left: 20px;
+}
+
+/* 📱 Responsive Breakpoints */
+@media (max-width: 768px) {
+    span {
+        font-size: 20px;
+    }
+
+    .word1 {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sub-main {
+        padding: 10px;
+    }
+
+    .title, .count {
+        flex-direction: column; /* stack text vertically */
+        text-align: center;
+    }
+
+    span {
+        font-size: 18px;
+    }
+
+    .word1 {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
