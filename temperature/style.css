@@ -1,0 +1,83 @@
+body{
+    background: linear-gradient(brown, yellow);
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh; /* instead of fixed height */
+    background: linear-gradient(brown, yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px; /* prevent overflow on small screens */
+}
+
+.sub-main {
+    width: 100%;
+    max-width: 500px; /* responsive width */
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    padding: 20px; /* give breathing room */
+}
+
+.title {
+    width: 100%;
+    height: auto; /* remove fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.sub-main h3 {
+    font-family: Courier, monospace;
+    margin: 0;
+    /* text-align: center; */
+}
+
+.sub-main input {
+    width: 350px; /* full responsive width */
+    height: 30px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.sub-main button {
+    width: 150px;
+    height: 40px;
+    margin: 20px auto 0; /* center button */
+    border-radius: 5px;
+    background-color: lightblue;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sub-main button:hover {
+    background-color: skyblue;
+    transform: scale(1.05);
+}
+
+/* 📱 Responsive Breakpoints */
+@media (max-width: 600px) {
+    .sub-main {
+        padding: 15px;
+    }
+
+    .sub-main input {
+        font-size: 13px;
+        height: 35px;
+    }
+
+    .sub-main button {
+        width: 120px;
+        height: 35px;
+    }
+}
