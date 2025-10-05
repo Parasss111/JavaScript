@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container vh-100 d-flex justify-content-center align-items-center">
+    <div class="card shadow-lg w-100" style="max-width: 500px;">
+      <div class="card-header bg-primary text-white text-center">
+        <h4 class="mb-0">My To-Do List</h4>
+      </div>
+      <div class="card-body">
+        <!-- Input area -->
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" id="taskInput" placeholder="Add a new task...">
+          <button class="btn btn-primary" id="addTaskBtn">Add</button>
+        </div>
+
+        <!-- Task list -->
+        <ul class="list-group" id="taskList">
+          <!-- Example static items -->
+          <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+            Sample Task
+            <button class="btn btn-sm btn-danger">Delete</button>
+          </li> -->
+        </ul>
+      </div>
+      <!-- <div class="card-footer text-center">
+        <small class="text-muted">Bootstrap To-Do App</small>
+      </div> -->
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
